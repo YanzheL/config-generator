@@ -1,15 +1,12 @@
 language: node_js
-node_js: "6"
-
+node_js: '6'
 env:
   global:
-    - REPO_SLUG=paritytech/parity-config-generator
-    - secure: "VyqeNnK4Hi7nmTuoEhdTpJUv5fG/ZxrVXQug1vFr8qQfAMEEVGEoFgLrejEBhssHN/LwrSWQrAYqpPraHKvlDH1D5no9V9I39Q6AqvJ5tWGoUuNjV4aq74GGgRVhq5Tfl8gSIvjC8d2HwOjEpa6QjTuUAJtjO/UgujTmxhChLfmZnCTfoAGvmP2akOUwV1D6+Pbdoq46dW5BuHVVe2yPN/rStEuS8vTdAs5f6JxlSOjA36OKNuA4V2vqYLGzcXEzCnOS7DICXkBhxSG6rBY0q0bFOQy0vFFVkQVS4C4MRbmhMkUiwbXFJoNBsr+mi6tEdmd+QIpyyfqpPEQyB4Q7b4C6+YLeTaNLAk/t/wrhtLHjscxYss3BArHL8teeBz9VwiEPUM4Fy8QTHTsqhkBWy+RJpZIyfDNNo2fNZTqSorEuF7GF36QyQf1qcZ4An8FtkbI/Umay0MQycCM6fDpNEd5usgINKoRO/BTvQlreY/2AciCml/hKspqxHkLgaDm32z1Aouv8mACOZgT/50YqILcBn7wQqmq62hhmhy72wUZzvOLDO9V9Fpy63dGSGzG8lPfdgYNjK9gR3+RbKFS+GAb6xS+VrRUUy6P6t9wJONEe7N1TVb7Ruzamqdr2YTsUT5sWM5S/n97MW8er0Tm15ICIPmdy+V8CTVMpDSiPEUY="
-
+  - REPO_SLUG=YanzheL/config-generator
+  - secure: bcdtwesH7LCn2L0TwP2Ezc590knHLzOPsbuPSxO9IcJ/tOrqh5He+voLJPgqgm9+LGVI4+JZ/ZP1Thwv5ew0JppkslOc0px3YVnBQQel28MhOKAaLOJO2inIjGr6yr3AFSfpMHQ+hOMnOhRx6JtSi8rde+bDjJlFH9nHQ0tVaesw/XJF8+0SIDwn3UFxVAzLzJT3JmUJFuyCxw+41cujZYLXkmbl6/ZclIU2Cziy9CYFoyteLixD2EsWfbTEG2J+qiqtGMTai4vTu/cO1TuWZsHoanFemm+uum/fwlHQfxNp6oZVKbZilk5RP5+UheVIMDf1pBjEotqrvS1RtPaB9jNyH6vNXIhJrKkO2RdwOzb/JcfZlxDf9Ml0EkABfCE0lW3hQ2MIec5AVuw/DkPQyRaDk0UlvEbIJ4CQ+Dotip4JNm4nK4lPnns9L6rKgpxVhU9pvsVmHODI2hJx8chYGlXtdRt2qKJgj+APuI2e87e8/nycQkZxbRZXVGM/m8Lne0YEppuc91pDVzd+tDVIoRoWZyamkK0AGhuWuRs3VHgeBl06frDSm6VqnNqZiJshyIge5LkrCIFVkL9ksISNBomytEWJqMPvkIUlApEit4kMTN68dzdzobD6lEeGn9chKywsn/ytiqpT2XleFUkQoGUXn8g/njgISy+6oAJ+ByM=
 script:
-  - npm run lint
-  - npm test
-  - npm run build
-
+- npm run lint
+- npm test
+- npm run build
 after_success:
-  - ./scripts/deploy-to-gh-pages.sh
+- "./scripts/deploy-to-gh-pages.sh"
